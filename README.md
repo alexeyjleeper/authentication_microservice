@@ -3,6 +3,7 @@ Requesting data:
 Both the /signup and /login endpoints take username and password query parameters.
 
 examples:
+
 https://cs361authenticator-2718ea176011.herokuapp.com/signup?username=Insert-USER-NAME&password=INSERT-PASSWORD
 https://cs361authenticator-2718ea176011.herokuapp.com/login?username=Insert-USER-NAME&password=INSERT-PASSWORD
 
@@ -13,17 +14,17 @@ The signup request will send the username and password to storage and the login 
 Receiving data:
 
 Possible signup responses:
-status: 201, body: credentials already exist
-staus: 500, body: Server side error, please retry
-status: 201, body: success
-status: 500, body: fail
+<status: 201, body: credentials already exist>, 
+<staus: 500, body: Server side error, please retry>, 
+<status: 201, body: success>,
+<status: 500, body: fail>
 
 The top 2 responses correspond to checking if the signup credentials already exist, and the bottom 2 respond to a request to add the credentials to storage.
 
 Possible login responses:
-status: 201, body: valid
-status: 201, body: invalid
-status: 500, body: Server side error, please retry
+<status: 201, body: valid>, 
+<status: 201, body: invalid>,
+<status: 500, body: Server side error, please retry>
 
 The response will be 'valid' if the credentials exist in storage and 'invalid' if the credentials do not exist.
 
