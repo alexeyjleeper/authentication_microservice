@@ -4,8 +4,8 @@ Both the /signup and /login endpoints take username and password query parameter
 
 examples:
 
-https://cs361authenticator-2718ea176011.herokuapp.com/signup?username=Insert-USER-NAME&password=INSERT-PASSWORD
-https://cs361authenticator-2718ea176011.herokuapp.com/login?username=Insert-USER-NAME&password=INSERT-PASSWORD
+https://cs361authenticator-2718ea176011.herokuapp.com/signup?username=INSERT-USER-NAME&password=INSERT-PASSWORD
+https://cs361authenticator-2718ea176011.herokuapp.com/login?username=INSERT-USER-NAME&password=INSERT-PASSWORD
 
 both query parameters expect a string
 
